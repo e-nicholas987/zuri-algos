@@ -5,7 +5,7 @@ function fahrToCelcius(param) {
         return res === 0 ? res.toFixed(0) : res.toFixed(4);
     }
 
-    const paramType = Array.isArray(param) ? 'Array' : typeof param
+    const paramType = Array.isArray(param) ? 'array' : typeof param
     return `${JSON.stringify(param)} is not a valid number but a/an ${(paramType)}`;
 
 }
