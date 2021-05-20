@@ -1,5 +1,3 @@
-// 1.) Fahrenheit to Celcius
-
 function fahrToCelcius(param) {
 
     if (typeof param === 'number' || param && typeof param === 'string' && isNaN(param) === false) {
@@ -7,11 +5,10 @@ function fahrToCelcius(param) {
         return res === 0 ? res.toFixed(0) : res.toFixed(4);
     }
 
-    return `${JSON.stringify(param)} is not a valid number but a/an ${typeof (param)}`;
+    const paramType = Array.isArray(param) ? 'Array' : typeof param
+    return `${JSON.stringify(param)} is not a valid number but a/an ${(paramType)}`;
+
 }
-
-
-// 2.) UhGiOh Checker
 
 function checkUhGiOh(n) {
 
